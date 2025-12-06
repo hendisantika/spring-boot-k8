@@ -1,0 +1,2 @@
+CREATE
+DATABASE k8_sample_db;
