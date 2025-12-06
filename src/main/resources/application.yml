@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: Spring Boot with Kubernetes
+  profiles:
+    active: dev
