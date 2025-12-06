@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    name: Postgres DEV K8 Connection
+    url: jdbc:postgresql://localhost:5435/k8_sample_db
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    open-in-view: false
+    show-sql: true
+    hibernate:
+      ddl-auto: create-drop
