@@ -1,1 +1,13 @@
 services:
+  postgres:
+    image: "postgres:18-alpine3.23"
+    restart: always
+    shm_size: 256m
+    ports:
+      - "5435:5432"
+    volumes:
+      - ./docker/postgres/init.sql:/docker-entrypoint-initdb.d/init.sql
+      - ./docker/postgres/data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_PASSWORD: postgres
+    container_name: postgres_dev
