@@ -1,0 +1,18 @@
+### Get all people
+GET http://localhost:8080/api/person
+Accept: application/json
+
+### Get person by id
+GET http://localhost:8080/api/person/1
+Accept: application/json
+
+### Create Person
+POST http://localhost:8080/api/person
+Accept: application/json
+Content-Type: application/json
+
+{
+  "firstName": "Heril",
+  "lastName": "Muratovic",
+  "age": 31
+}
